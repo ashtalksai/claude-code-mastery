@@ -1,0 +1,39 @@
+{
+  "project": "Project Name",
+  "description": "Brief project description",
+  "created": "2024-01-15",
+  "stories": [
+    {
+      "id": "US-001",
+      "title": "Story Title",
+      "description": "As a [user], I want to [action] so that [benefit]",
+      "acceptance": [
+        "Criterion 1 that can be verified",
+        "Criterion 2 that can be verified",
+        "Criterion 3 that can be verified"
+      ],
+      "priority": "P0",
+      "status": "pending",
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Another Story",
+      "description": "As a [user], I want to [action] so that [benefit]",
+      "acceptance": [
+        "Criterion 1",
+        "Criterion 2"
+      ],
+      "priority": "P1",
+      "status": "pending",
+      "passes": false,
+      "notes": ""
+    }
+  ],
+  "metadata": {
+    "total_stories": 2,
+    "completed": 0,
+    "blocked": 0
+  }
+}

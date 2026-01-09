@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check this command for safety. BLOCK if it: uses rm -rf with wildcards or on important directories, affects production systems, contains hardcoded credentials, or modifies system files outside the project. Otherwise allow it."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx prettier --write \"$filepath\" 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+# AGENTS.md
+
+> This follows the [agents.md](https://agents.md/) open standard for AI coding agents.
+> Put this file at your repo root or in any subdirectory for context-specific guidance.
+
+## Project overview
+
+[Brief description of what this project does]
+
+**Tech stack:** [e.g., React, TypeScript, Node.js, PostgreSQL]
+
+## Dev environment tips
+
+- Run `pnpm install` to install dependencies
+- Run `pnpm dev` for development server (always use dev, not build)
+- After adding new dependencies, restart the dev server
+- Environment variables are in `.env.example` - copy to `.env.local`
+
+## Code style
+
+- Use TypeScript for all new code
+- Follow existing patterns in the codebase
+- Components go in `src/components/`
+- API routes go in `src/api/`
+
+## Testing instructions
+
+- Run `pnpm test` before committing
+- Run `pnpm lint` to check code style
+- Run `pnpm typecheck` for TypeScript validation
+- All tests must pass before PR
+
+## PR instructions
+
+- Use conventional commits: `feat:`, `fix:`, `docs:`, `refactor:`
+- Include tests for new features
+- Update documentation if behavior changes
+- Keep PRs focused on single changes
+
+## Key files
+
+| File | Purpose |
+|------|---------|
+| `src/index.ts` | Application entry point |
+| `src/config/` | Configuration files |
+| [Add your key files] | |
+
+## Gotchas
+
+- [Thing that's not obvious but important]
+- [Common mistake to avoid]
+- [Quirk of this codebase]
+
+## What NOT to do
+
+- Don't commit `.env` files
+- Don't use `any` type in TypeScript
+- Don't skip tests
+- [Add project-specific warnings]
+
+---
+
+*This file helps AI coding agents understand your project.*
+*Learn more: https://agents.md/*
